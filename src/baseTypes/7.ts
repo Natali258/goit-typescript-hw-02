@@ -13,10 +13,10 @@ enum Day {
   sunday = "Sunday",
 }
 
-function isWeekend(Day) {
-  console.log(Day);
+function isWeekend(day: string): boolean {
+  console.log(day);
 
-  if (Day === "Saturday" || "Sunday") {
+  if (day === Day.saturday || Day.sunday) {
     return true;
   } else {
     return false;
